@@ -21,6 +21,30 @@ class TestAppTests: XCTestCase {
         super.tearDown()
     }
     
+    func testValidateLocation(){
+        let locationName = "Apple infinite loop"
+        LocationManager().getGeoLocation(location: locationName, successHandler: { (result) -> Void in
+            XCTAssert(result)
+        }, failureHandler: {(error) -> Void in
+            XCTFail()
+        })
+    }
+    
+    func testOpenWikiApp(){
+        let urlScheme =  "ShowLocationThroughDeepLinking://host/"
+        let lat = "37.332082387122"
+       let long = "-122.030764055579"
+       if let custURL : URL = LocationDetailViewController().getURL(urlScheme: urlScheme, latitude: lat, longitude: long){
+            if UIApplication.shared.canOpenURL(custURL){
+                XCTAssert(true)
+            }else{
+                XCTFail()
+            }
+       }else{
+            XCTFail()
+        }
+    }
+    
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
