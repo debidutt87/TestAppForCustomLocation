@@ -22,7 +22,19 @@ class ViewController: UIViewController {
         super.viewWillAppear(true)
          customLocations = DataManager.loadData(key: storeLocationData) as? LocationList
         customLocationsList = customLocations?.locList ?? [Location]()
+        let leftBtn = UIBarButtonItem(title: editBtnTitle, style: .plain, target: self, action: #selector(showEditing))
+        self.navigationItem.leftBarButtonItem = leftBtn
         locationTableView.reloadData()
+    }
+    
+  @objc  func showEditing()
+    {
+        locationTableView.setEditing(!locationTableView.isEditing, animated: true)
+        if locationTableView.isEditing == true{
+            navigationItem.leftBarButtonItem = UIBarButtonItem(title: doneBtnTitle, style: UIBarButtonItemStyle.plain, target: self, action: #selector(ViewController.showEditing))
+        }else{
+            navigationItem.leftBarButtonItem = UIBarButtonItem(title: editBtnTitle, style: UIBarButtonItemStyle.plain, target: self, action: #selector(ViewController.showEditing))
+        }
     }
 
 }
@@ -38,16 +50,28 @@ extension ViewController : UITableViewDelegate,UITableViewDataSource {
     }
     
      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "LocationCell", for: indexPath) as! LocationCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: locationCell, for: indexPath) as! LocationCell
         let custLoc = customLocationsList![indexPath.row] as Location
         cell.locationName.text = custLoc.locationName
-        
+        cell.locationName.text?.capitalizeFirstLetter()
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
       let custLoc = customLocationsList![indexPath.row] as Location
        openWikiAppThroughDeepLinking(customLocation: custLoc)
+    }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath){
+        if editingStyle == .delete {
+            customLocationsList?.remove(at: indexPath.row)
+            LocationManager().storeModifiedData(list: customLocationsList!)
+            self.locationTableView.reloadData()
+        }
     }
     
     

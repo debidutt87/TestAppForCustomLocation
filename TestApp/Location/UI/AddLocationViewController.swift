@@ -10,12 +10,15 @@ import UIKit
 
 class AddLocationViewController: UIViewController {
     var locationManager: LocationManager?
+    var indicator:ProgressIndicator?
     @IBOutlet weak var locationTxtFld: UITextField!
  
     //MARK: Life Cycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         locationManager = LocationManager()
+        indicator = ProgressIndicator(inview:self.view,loadingViewColor: UIColor.gray, indicatorColor: UIColor.black, msg: indicatorMsg)
+        self.view.addSubview(indicator!)
     }
 
 }
@@ -25,14 +28,17 @@ extension AddLocationViewController {
     /*......... Method is called when add button is pressed */
     @IBAction func addBtnPressed(_ sender: Any) {
         if let locationName = locationTxtFld.text {
+            indicator?.start()
            self.getGeoLocation(location: locationName)
         }
     }
     
     func getGeoLocation(location:String){
         locationManager?.getGeoLocation(location: location, successHandler: { (result) -> Void in
+            self.indicator?.stop()
             self.navigationController?.popViewController(animated: true)
         }, failureHandler: { (error) -> Void in
+            self.indicator?.stop()
             switch(error as! LocationValidationError) {
             case .InvalidLocation:
                 self.showAlert(errorMsg: invalidLocation)

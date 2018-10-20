@@ -43,5 +43,9 @@ class LocationManager: NSObject {
     func getStoreData() ->[Location]?{
         return locationList
     }
-
+    
+    func storeModifiedData(list : [Location]){
+        let storedData =  LocationList(locList: list)
+        DataManager.saveData(data: storedData,key: storeLocationData)
+    }
 }

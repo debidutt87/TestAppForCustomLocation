@@ -32,15 +32,25 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iTU-Z4-Iq2">
                                                     <rect key="frame" x="10" y="11" width="355" height="22"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6e6-re-8RJ">
+                                                    <rect key="frame" x="5" y="43" width="365" height="1"/>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="yx2-Ak-ZPV"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="6e6-re-8RJ" secondAttribute="trailing" constant="5" id="DDd-yJ-UdQ"/>
+                                                <constraint firstItem="6e6-re-8RJ" firstAttribute="leading" secondItem="lbp-y3-hQX" secondAttribute="leading" constant="5" id="RaJ-f6-3cW"/>
                                                 <constraint firstItem="iTU-Z4-Iq2" firstAttribute="top" secondItem="lbp-y3-hQX" secondAttribute="top" constant="11" id="VB3-FL-rw1"/>
                                                 <constraint firstItem="iTU-Z4-Iq2" firstAttribute="leading" secondItem="lbp-y3-hQX" secondAttribute="leading" constant="10" id="WqN-Fm-tqM"/>
                                                 <constraint firstAttribute="trailing" secondItem="iTU-Z4-Iq2" secondAttribute="trailing" constant="10" id="Yl7-7m-0T9"/>
                                                 <constraint firstAttribute="bottom" secondItem="iTU-Z4-Iq2" secondAttribute="bottom" constant="11" id="bX9-db-R2T"/>
+                                                <constraint firstAttribute="bottom" secondItem="6e6-re-8RJ" secondAttribute="bottom" id="fKe-QG-i0h"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -66,6 +76,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Location" id="YLt-ys-XWz">
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="7eS-6p-q5Q">
+                            <color key="tintColor" red="0.31076190221943145" green="0.27096329852386081" blue="0.72501586294416243" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <connections>
                                 <segue destination="uug-11-1Zl" kind="show" id="x08-JQ-USM"/>
                             </connections>
@@ -88,17 +99,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="AoU-Jl-ivM">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="E.g. Time Square New York" textAlignment="natural" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="AoU-Jl-ivM">
                                 <rect key="frame" x="20" y="112" width="335" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="BTp-aR-QUz"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Enter The Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gpz-d0-pBl">
-                                <rect key="frame" x="20" y="84" width="176" height="17.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter the location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gpz-d0-pBl">
+                                <rect key="frame" x="20" y="84" width="166" height="17.5"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="17.5" id="Uho-XO-R91"/>
                                 </constraints>
@@ -107,13 +118,16 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MVr-3g-tPL">
-                                <rect key="frame" x="152.5" y="189" width="70" height="30"/>
+                                <rect key="frame" x="137.5" y="189" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.3107619022" green="0.2709632985" blue="0.72501586289999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="PnR-3z-hg3"/>
-                                    <constraint firstAttribute="width" constant="70" id="ek3-Yj-fJN"/>
+                                    <constraint firstAttribute="width" constant="100" id="ek3-Yj-fJN"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                <state key="normal" title="Add"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Add">
+                                    <color key="titleColor" red="0.96214630695831316" green="1" blue="0.97287709404617051" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                                 <connections>
                                     <action selector="addBtnPressed:" destination="uug-11-1Zl" eventType="touchUpInside" id="Ck5-gj-UCJ"/>
                                 </connections>
@@ -177,6 +191,11 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xoK-Zo-sac">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.14901960780000001" green="0.77647058820000003" blue="0.52156862749999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" red="0.3107619022" green="0.2709632985" blue="0.72501586289999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.3107619022" green="0.2709632985" blue="0.72501586289999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
