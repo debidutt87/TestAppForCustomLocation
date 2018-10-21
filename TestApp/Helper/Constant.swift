@@ -9,9 +9,9 @@
 
 import Foundation
 
-let invalidLocation = "Invalid Location"
-let emptyLocation = "Location can not be Empty"
-let errotTitle = "Error"
+let invalidLocation = "invalidLocation"
+let emptyLocation = "emptyLocation"
+let errotTitle = "errotTitle"
 let Okay = "Okay"
 let storeLocationData = "stored_location_data"
 let LocationDeatil = "LocationDeatil"
@@ -23,4 +23,4 @@ let longitudeKey = "longitude"
 let editBtnTitle = "Edit"
 let doneBtnTitle = "Done"
 let locationCell = "LocationCell"
-let indicatorMsg = "Landing within minutes,Please hold tight.."
+let indicatorMsg = "indicatorMsg"

@@ -22,9 +22,9 @@
 		E10F695F2179EE3D00C3E8D7 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10F695E2179EE3D00C3E8D7 /* DataManager.swift */; };
 		E10F69612179F24700C3E8D7 /* LocationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10F69602179F24700C3E8D7 /* LocationList.swift */; };
 		E10F69632179F6FC00C3E8D7 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10F69622179F6FC00C3E8D7 /* LocationCell.swift */; };
-		E10F6966217A099500C3E8D7 /* LocationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10F6965217A099500C3E8D7 /* LocationDetailViewController.swift */; };
 		E17F0118217B59E60004D119 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17F0117217B59E60004D119 /* Utility.swift */; };
 		E17F011A217B65110004D119 /* ProgressIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17F0119217B65110004D119 /* ProgressIndicator.swift */; };
+		E18EEC76217CF0260049C1AE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E18EEC74217CF0260049C1AE /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,9 +66,9 @@
 		E10F695E2179EE3D00C3E8D7 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		E10F69602179F24700C3E8D7 /* LocationList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationList.swift; sourceTree = "<group>"; };
 		E10F69622179F6FC00C3E8D7 /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
-		E10F6965217A099500C3E8D7 /* LocationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailViewController.swift; sourceTree = "<group>"; };
 		E17F0117217B59E60004D119 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		E17F0119217B65110004D119 /* ProgressIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressIndicator.swift; sourceTree = "<group>"; };
+		E18EEC75217CF0260049C1AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = TestApp/Application/Base.lproj/Localizable.strings; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,14 +119,11 @@
 		E10F68E62179D42C00C3E8D7 /* TestApp */ = {
 			isa = PBXGroup;
 			children = (
+				E18EEC73217CEFC10049C1AE /* Resources */,
+				E18EEC72217CEF640049C1AE /* Application */,
 				E10F695D2179EE1E00C3E8D7 /* Data */,
 				E10F695A2179E9CA00C3E8D7 /* Helper */,
 				E10F694F2179D5DF00C3E8D7 /* Location */,
-				E10F68E72179D42C00C3E8D7 /* AppDelegate.swift */,
-				E10F68EB2179D42C00C3E8D7 /* Main.storyboard */,
-				E10F68EE2179D42D00C3E8D7 /* Assets.xcassets */,
-				E10F68F02179D42D00C3E8D7 /* LaunchScreen.storyboard */,
-				E10F68F32179D42D00C3E8D7 /* Info.plist */,
 			);
 			path = TestApp;
 			sourceTree = "<group>";
@@ -164,7 +161,6 @@
 				E10F68E92179D42C00C3E8D7 /* ViewController.swift */,
 				E10F69512179D88900C3E8D7 /* AddLocationViewController.swift */,
 				E10F69622179F6FC00C3E8D7 /* LocationCell.swift */,
-				E10F6965217A099500C3E8D7 /* LocationDetailViewController.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -196,6 +192,26 @@
 				E10F695E2179EE3D00C3E8D7 /* DataManager.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		E18EEC72217CEF640049C1AE /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				E10F68F02179D42D00C3E8D7 /* LaunchScreen.storyboard */,
+				E10F68EB2179D42C00C3E8D7 /* Main.storyboard */,
+				E10F68E72179D42C00C3E8D7 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		E18EEC73217CEFC10049C1AE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E10F68F32179D42D00C3E8D7 /* Info.plist */,
+				E10F68EE2179D42D00C3E8D7 /* Assets.xcassets */,
+				E18EEC74217CF0260049C1AE /* Localizable.strings */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E10F68F22179D42D00C3E8D7 /* LaunchScreen.storyboard in Resources */,
+				E18EEC76217CF0260049C1AE /* Localizable.strings in Resources */,
 				E10F68EF2179D42D00C3E8D7 /* Assets.xcassets in Resources */,
 				E10F68ED2179D42C00C3E8D7 /* Main.storyboard in Resources */,
 			);
@@ -333,7 +350,6 @@
 				E10F695C2179EA5E00C3E8D7 /* Constant.swift in Sources */,
 				E10F695F2179EE3D00C3E8D7 /* DataManager.swift in Sources */,
 				E17F011A217B65110004D119 /* ProgressIndicator.swift in Sources */,
-				E10F6966217A099500C3E8D7 /* LocationDetailViewController.swift in Sources */,
 				E10F69592179E05600C3E8D7 /* LocationFinder.swift in Sources */,
 				E10F69552179DB5A00C3E8D7 /* LocationManager.swift in Sources */,
 				E10F68EA2179D42C00C3E8D7 /* ViewController.swift in Sources */,
@@ -391,6 +407,14 @@
 				E10F68F12179D42D00C3E8D7 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E18EEC74217CF0260049C1AE /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E18EEC75217CF0260049C1AE /* Base */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -515,7 +539,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TestApp/Info.plist;
+				INFOPLIST_FILE = TestApp/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -532,7 +556,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TestApp/Info.plist;
+				INFOPLIST_FILE = TestApp/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

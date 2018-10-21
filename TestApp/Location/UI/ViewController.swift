@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         super.viewWillAppear(true)
          customLocations = DataManager.loadData(key: storeLocationData) as? LocationList
         customLocationsList = customLocations?.locList ?? [Location]()
-        let leftBtn = UIBarButtonItem(title: editBtnTitle, style: .plain, target: self, action: #selector(showEditing))
+        let leftBtn = UIBarButtonItem(title: NSLocalizedString(editBtnTitle, comment: ""), style: .plain, target: self, action: #selector(showEditing))
         self.navigationItem.leftBarButtonItem = leftBtn
         locationTableView.reloadData()
     }
@@ -31,7 +31,7 @@ class ViewController: UIViewController {
     {
         locationTableView.setEditing(!locationTableView.isEditing, animated: true)
         if locationTableView.isEditing == true{
-            navigationItem.leftBarButtonItem = UIBarButtonItem(title: doneBtnTitle, style: UIBarButtonItemStyle.plain, target: self, action: #selector(ViewController.showEditing))
+            navigationItem.leftBarButtonItem = UIBarButtonItem(title: NSLocalizedString(doneBtnTitle, comment: ""), style: UIBarButtonItemStyle.plain, target: self, action: #selector(ViewController.showEditing))
         }else{
             navigationItem.leftBarButtonItem = UIBarButtonItem(title: editBtnTitle, style: UIBarButtonItemStyle.plain, target: self, action: #selector(ViewController.showEditing))
         }
