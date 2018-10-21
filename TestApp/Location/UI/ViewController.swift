@@ -70,8 +70,8 @@ extension ViewController : UITableViewDelegate,UITableViewDataSource {
         if editingStyle == .delete {
             customLocationsList?.remove(at: indexPath.row)
             LocationManager().storeModifiedData(list: customLocationsList!)
-            self.locationTableView.reloadData()
-        }
+            locationTableView.deleteRows(at: [indexPath], with: .left)
+         }
     }
     
     

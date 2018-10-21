@@ -15,6 +15,7 @@ class LocationManager: NSObject {
          locationList = (DataManager.loadData(key: storeLocationData) as? LocationList)?.locList ?? [Location]()
     }
     
+     //MARK: Geo Location Finder Method
     /*.... Find the location of provided address......*/
     func getGeoLocation(location:String,successHandler: @escaping (Bool) -> Void, failureHandler: @escaping (Error) ->Void){
         LocationFinder.findLocation(locationName: location, successHandler: {(location) -> Void in
@@ -29,12 +30,12 @@ class LocationManager: NSObject {
     //MARK: Saving and retriving Data
     func storeData(location:Location){
         guard var addressList = locationList else {
-           locationList?.append(location)
+            locationList?.insert(location, at: 0)
             let storedData = LocationList(locList: locationList!)
             DataManager.saveData(data: storedData,key: storeLocationData)
             return
         }
-            addressList.append(location)
+        addressList.insert(location, at: 0)
             let storedData = LocationList(locList: addressList)
             DataManager.saveData(data: storedData,key: storeLocationData)
       }
