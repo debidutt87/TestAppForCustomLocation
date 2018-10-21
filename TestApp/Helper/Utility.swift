@@ -10,12 +10,13 @@ import Foundation
 
 
 
-extension String {
-    func capitalizingFirstLetter() -> String {
-        return prefix(1).uppercased() + dropFirst()
+extension StringProtocol {
+    var firstUppercased: String {
+        guard let first = first else { return "" }
+        return String(first).uppercased() + dropFirst()
     }
-    
-    mutating func capitalizeFirstLetter() {
-        self = self.capitalizingFirstLetter()
+  var firstCapitalized: String {
+        guard let first = first else { return "" }
+        return String(first).capitalized + dropFirst()
     }
 }

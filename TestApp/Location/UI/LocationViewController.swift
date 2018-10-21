@@ -52,8 +52,7 @@ extension LocationViewController : UITableViewDelegate,UITableViewDataSource {
      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: locationCell, for: indexPath) as! LocationCell
         let custLoc = customLocationsList![indexPath.row] as Location
-        cell.locationName.text = custLoc.locationName
-        cell.locationName.text?.capitalizeFirstLetter()
+        cell.locationName.text = custLoc.locationName?.firstUppercased
         return cell
     }
     
