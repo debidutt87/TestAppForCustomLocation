@@ -23,7 +23,8 @@
 		E10F69612179F24700C3E8D7 /* LocationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10F69602179F24700C3E8D7 /* LocationList.swift */; };
 		E10F69632179F6FC00C3E8D7 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10F69622179F6FC00C3E8D7 /* LocationCell.swift */; };
 		E17F0118217B59E60004D119 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17F0117217B59E60004D119 /* Utility.swift */; };
-		E17F011A217B65110004D119 /* ProgressIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17F0119217B65110004D119 /* ProgressIndicator.swift */; };
+		E1823E49217D23B100C072D7 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1823E48217D23B100C072D7 /* ProgressView.swift */; };
+		E1823E4B217D23D400C072D7 /* ProgressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1823E4A217D23D400C072D7 /* ProgressView.xib */; };
 		E18EEC76217CF0260049C1AE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E18EEC74217CF0260049C1AE /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
@@ -67,7 +68,8 @@
 		E10F69602179F24700C3E8D7 /* LocationList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationList.swift; sourceTree = "<group>"; };
 		E10F69622179F6FC00C3E8D7 /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
 		E17F0117217B59E60004D119 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
-		E17F0119217B65110004D119 /* ProgressIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressIndicator.swift; sourceTree = "<group>"; };
+		E1823E48217D23B100C072D7 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		E1823E4A217D23D400C072D7 /* ProgressView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProgressView.xib; sourceTree = "<group>"; };
 		E18EEC75217CF0260049C1AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = TestApp/Application/Base.lproj/Localizable.strings; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -181,7 +183,7 @@
 			children = (
 				E10F695B2179EA5E00C3E8D7 /* Constant.swift */,
 				E17F0117217B59E60004D119 /* Utility.swift */,
-				E17F0119217B65110004D119 /* ProgressIndicator.swift */,
+				E1823E48217D23B100C072D7 /* ProgressView.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -210,6 +212,7 @@
 				E10F68F32179D42D00C3E8D7 /* Info.plist */,
 				E10F68EE2179D42D00C3E8D7 /* Assets.xcassets */,
 				E18EEC74217CF0260049C1AE /* Localizable.strings */,
+				E1823E4A217D23D400C072D7 /* ProgressView.xib */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 			files = (
 				E10F68F22179D42D00C3E8D7 /* LaunchScreen.storyboard in Resources */,
 				E18EEC76217CF0260049C1AE /* Localizable.strings in Resources */,
+				E1823E4B217D23D400C072D7 /* ProgressView.xib in Resources */,
 				E10F68EF2179D42D00C3E8D7 /* Assets.xcassets in Resources */,
 				E10F68ED2179D42C00C3E8D7 /* Main.storyboard in Resources */,
 			);
@@ -349,8 +353,8 @@
 				E10F69612179F24700C3E8D7 /* LocationList.swift in Sources */,
 				E10F695C2179EA5E00C3E8D7 /* Constant.swift in Sources */,
 				E10F695F2179EE3D00C3E8D7 /* DataManager.swift in Sources */,
-				E17F011A217B65110004D119 /* ProgressIndicator.swift in Sources */,
 				E10F69592179E05600C3E8D7 /* LocationFinder.swift in Sources */,
+				E1823E49217D23B100C072D7 /* ProgressView.swift in Sources */,
 				E10F69552179DB5A00C3E8D7 /* LocationManager.swift in Sources */,
 				E10F68EA2179D42C00C3E8D7 /* LocationViewController.swift in Sources */,
 				E10F69632179F6FC00C3E8D7 /* LocationCell.swift in Sources */,
