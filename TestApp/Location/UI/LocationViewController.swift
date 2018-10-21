@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LocationViewController: UIViewController {
 
     @IBOutlet weak var locationTableView: UITableView!
     var customLocations : LocationList?
@@ -31,15 +31,15 @@ class ViewController: UIViewController {
     {
         locationTableView.setEditing(!locationTableView.isEditing, animated: true)
         if locationTableView.isEditing == true{
-            navigationItem.leftBarButtonItem = UIBarButtonItem(title: NSLocalizedString(doneBtnTitle, comment: ""), style: UIBarButtonItemStyle.plain, target: self, action: #selector(ViewController.showEditing))
+            navigationItem.leftBarButtonItem = UIBarButtonItem(title: NSLocalizedString(doneBtnTitle, comment: ""), style: UIBarButtonItemStyle.plain, target: self, action: #selector(LocationViewController.showEditing))
         }else{
-            navigationItem.leftBarButtonItem = UIBarButtonItem(title: editBtnTitle, style: UIBarButtonItemStyle.plain, target: self, action: #selector(ViewController.showEditing))
+            navigationItem.leftBarButtonItem = UIBarButtonItem(title: editBtnTitle, style: UIBarButtonItemStyle.plain, target: self, action: #selector(LocationViewController.showEditing))
         }
     }
 
 }
 
-extension ViewController : UITableViewDelegate,UITableViewDataSource {
+extension LocationViewController : UITableViewDelegate,UITableViewDataSource {
     // MARK: - Table View
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -77,7 +77,7 @@ extension ViewController : UITableViewDelegate,UITableViewDataSource {
     
 }
 
-extension ViewController {
+extension LocationViewController {
     
     func openWikiAppThroughDeepLinking(customLocation:Location?){
         if let custLoc = customLocation {

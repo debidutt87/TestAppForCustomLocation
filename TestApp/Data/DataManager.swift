@@ -12,10 +12,10 @@ import Foundation
 class DataManager: NSObject {
     
     class  func saveData(data : AnyObject,key:String){
-    let defaults = UserDefaults.standard
-    let data = NSKeyedArchiver.archivedData(withRootObject: data)
-    defaults.set(data,forKey: key)
-    defaults.synchronize()
+        let defaults = UserDefaults.standard
+        let data = NSKeyedArchiver.archivedData(withRootObject: data)
+        defaults.set(data,forKey: key)
+        defaults.synchronize()
     }
     
     class func loadData(key:String) -> AnyObject? {
