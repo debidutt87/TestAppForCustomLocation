@@ -1,0 +1,250 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "LocationManager"
+provides-nominal:
+- "7TestApp15LocationManagerC"
+provides-member:
+- ["7TestApp15LocationManagerC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "??"
+- "AssignmentPrecedence"
+- "Bool"
+- "BooleanLiteralType"
+- "CastingPrecedence"
+- !private "DataManager"
+- "Error"
+- "Location"
+- !private "LocationFinder"
+- !private "LocationList"
+- "LocationManager"
+- "NSObject"
+- "String"
+- "Void"
+- !private "storeLocationData"
+depends-member:
+- !private ["Sa", "init"]
+- !private ["Sa", "insert"]
+- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["s23BidirectionalCollectionP", "insert"]
+- !private ["s7CVarArgP", "DataManager"]
+- !private ["s7CVarArgP", "Location"]
+- !private ["s7CVarArgP", "LocationFinder"]
+- !private ["s7CVarArgP", "LocationList"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "findLocation"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "insert"]
+- !private ["s7CVarArgP", "loadData"]
+- !private ["s7CVarArgP", "locList"]
+- !private ["s7CVarArgP", "locationList"]
+- !private ["s7CVarArgP", "saveData"]
+- !private ["s7CVarArgP", "storeData"]
+- !private ["s7CVarArgP", "storeLocationData"]
+- !private ["s10CollectionP", "init"]
+- !private ["s10CollectionP", "insert"]
+- !private ["s28CustomDebugStringConvertibleP", "DataManager"]
+- !private ["s28CustomDebugStringConvertibleP", "Location"]
+- !private ["s28CustomDebugStringConvertibleP", "LocationFinder"]
+- !private ["s28CustomDebugStringConvertibleP", "LocationList"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "findLocation"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "insert"]
+- !private ["s28CustomDebugStringConvertibleP", "loadData"]
+- !private ["s28CustomDebugStringConvertibleP", "locList"]
+- !private ["s28CustomDebugStringConvertibleP", "locationList"]
+- !private ["s28CustomDebugStringConvertibleP", "saveData"]
+- !private ["s28CustomDebugStringConvertibleP", "storeData"]
+- !private ["s28CustomDebugStringConvertibleP", "storeLocationData"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "insert"]
+- !private ["s23CustomStringConvertibleP", "DataManager"]
+- !private ["s23CustomStringConvertibleP", "Location"]
+- !private ["s23CustomStringConvertibleP", "LocationFinder"]
+- !private ["s23CustomStringConvertibleP", "LocationList"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "findLocation"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "insert"]
+- !private ["s23CustomStringConvertibleP", "loadData"]
+- !private ["s23CustomStringConvertibleP", "locList"]
+- !private ["s23CustomStringConvertibleP", "locationList"]
+- !private ["s23CustomStringConvertibleP", "saveData"]
+- !private ["s23CustomStringConvertibleP", "storeData"]
+- !private ["s23CustomStringConvertibleP", "storeLocationData"]
+- !private ["7TestApp11DataManagerC", "loadData"]
+- !private ["7TestApp11DataManagerC", "saveData"]
+- !private ["s9DecodableP", "init"]
+- !private ["s9DecodableP", "insert"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EncodableP", "insert"]
+- !private ["s9EquatableP", "DataManager"]
+- !private ["s9EquatableP", "Location"]
+- !private ["s9EquatableP", "LocationFinder"]
+- !private ["s9EquatableP", "LocationList"]
+- ["s9EquatableP", ""]
+- !private ["s9EquatableP", "findLocation"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "insert"]
+- !private ["s9EquatableP", "loadData"]
+- !private ["s9EquatableP", "locList"]
+- !private ["s9EquatableP", "locationList"]
+- !private ["s9EquatableP", "saveData"]
+- !private ["s9EquatableP", "storeData"]
+- !private ["s9EquatableP", "storeLocationData"]
+- !private ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["s25ExpressibleByArrayLiteralP", "insert"]
+- !private ["s8HashableP", "DataManager"]
+- !private ["s8HashableP", "Location"]
+- !private ["s8HashableP", "LocationFinder"]
+- !private ["s8HashableP", "LocationList"]
+- ["s8HashableP", ""]
+- !private ["s8HashableP", "findLocation"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "loadData"]
+- !private ["s8HashableP", "locList"]
+- !private ["s8HashableP", "locationList"]
+- !private ["s8HashableP", "saveData"]
+- !private ["s8HashableP", "storeData"]
+- !private ["s8HashableP", "storeLocationData"]
+- !private ["7TestApp14LocationFinderC", "findLocation"]
+- !private ["7TestApp12LocationListC", "deinit"]
+- !private ["7TestApp12LocationListC", "init"]
+- !private ["7TestApp12LocationListC", "locList"]
+- ["7TestApp15LocationManagerC", "Bool"]
+- !private ["7TestApp15LocationManagerC", "DataManager"]
+- ["7TestApp15LocationManagerC", "Error"]
+- ["7TestApp15LocationManagerC", "Location"]
+- !private ["7TestApp15LocationManagerC", "LocationFinder"]
+- !private ["7TestApp15LocationManagerC", "LocationList"]
+- ["7TestApp15LocationManagerC", "String"]
+- ["7TestApp15LocationManagerC", "Void"]
+- ["7TestApp15LocationManagerC", "deinit"]
+- ["7TestApp15LocationManagerC", "getGeoLocation"]
+- ["7TestApp15LocationManagerC", "getStoreData"]
+- ["7TestApp15LocationManagerC", "init"]
+- ["7TestApp15LocationManagerC", "locationList"]
+- ["7TestApp15LocationManagerC", "storeData"]
+- !private ["7TestApp15LocationManagerC", "storeLocationData"]
+- ["7TestApp15LocationManagerC", "storeModifiedData"]
+- !private ["s17MutableCollectionP", "init"]
+- !private ["s17MutableCollectionP", "insert"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "locList"]
+- ["So8NSObjectC", "Bool"]
+- !private ["So8NSObjectC", "DataManager"]
+- ["So8NSObjectC", "Error"]
+- ["So8NSObjectC", "Location"]
+- !private ["So8NSObjectC", "LocationFinder"]
+- !private ["So8NSObjectC", "LocationList"]
+- ["So8NSObjectC", "String"]
+- ["So8NSObjectC", "Void"]
+- ["So8NSObjectC", ""]
+- !private ["So8NSObjectC", "findLocation"]
+- ["So8NSObjectC", "getGeoLocation"]
+- ["So8NSObjectC", "getStoreData"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "loadData"]
+- !private ["So8NSObjectC", "locList"]
+- ["So8NSObjectC", "locationList"]
+- !private ["So8NSObjectC", "saveData"]
+- ["So8NSObjectC", "storeData"]
+- !private ["So8NSObjectC", "storeLocationData"]
+- ["So8NSObjectC", "storeModifiedData"]
+- !private ["So16NSObjectProtocolP", "DataManager"]
+- !private ["So16NSObjectProtocolP", "Location"]
+- !private ["So16NSObjectProtocolP", "LocationFinder"]
+- !private ["So16NSObjectProtocolP", "LocationList"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["So16NSObjectProtocolP", "findLocation"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "loadData"]
+- !private ["So16NSObjectProtocolP", "locList"]
+- !private ["So16NSObjectProtocolP", "locationList"]
+- !private ["So16NSObjectProtocolP", "saveData"]
+- !private ["So16NSObjectProtocolP", "storeData"]
+- !private ["So16NSObjectProtocolP", "storeLocationData"]
+- !private ["s22RandomAccessCollectionP", "init"]
+- !private ["s22RandomAccessCollectionP", "insert"]
+- !private ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s26RangeReplaceableCollectionP", "insert"]
+- !private ["s8SequenceP", "init"]
+- !private ["s8SequenceP", "insert"]
+- !private ["s14_ArrayProtocolP", "init"]
+- !private ["s14_ArrayProtocolP", "insert"]
+- !private ["s24_DestructorSafeContainerP", "init"]
+- !private ["s24_DestructorSafeContainerP", "insert"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "DataManager"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Location"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "LocationFinder"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "LocationList"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "findLocation"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "loadData"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "locList"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "locationList"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "saveData"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "storeData"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "storeLocationData"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "insert"]
+depends-nominal:
+- !private "Sa"
+- !private "s23BidirectionalCollectionP"
+- "s7CVarArgP"
+- !private "s10CollectionP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "7TestApp11DataManagerC"
+- !private "s9DecodableP"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- !private "s25ExpressibleByArrayLiteralP"
+- "s8HashableP"
+- !private "7TestApp14LocationFinderC"
+- !private "7TestApp12LocationListC"
+- "7TestApp15LocationManagerC"
+- !private "s17MutableCollectionP"
+- !private "So8NSCodingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "s22RandomAccessCollectionP"
+- !private "s26RangeReplaceableCollectionP"
+- !private "s8SequenceP"
+- !private "s14_ArrayProtocolP"
+- !private "s24_DestructorSafeContainerP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MapKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "ca206bacd56c5da465649753541b6fc1"
