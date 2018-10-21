@@ -24,3 +24,5 @@ let editBtnTitle = "Edit"
 let doneBtnTitle = "Done"
 let locationCell = "LocationCell"
 let indicatorMsg = "indicatorMsg"
+
+
