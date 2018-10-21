@@ -10,7 +10,10 @@
 import Foundation
 
 class DataManager: NSObject {
-    
+    //MARK:Storing & Retriving Data
+    /*....... Storing Data ........*/
+    /*Param data could be accepted in any format
+     key could be keyName to be used to store and retrive */
     class  func saveData(data : AnyObject,key:String){
         let defaults = UserDefaults.standard
         let data = NSKeyedArchiver.archivedData(withRootObject: data)
