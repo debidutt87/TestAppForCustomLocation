@@ -1,10 +1,4 @@
-//
-//  TestAppTests.swift
-//  TestAppTests
-//
-//  Created by Mukesh Kumar on 2018-10-19.
-//  Copyright © 2018 Mukesh Kumar. All rights reserved.
-//
+
 
 import XCTest
 @testable import TestApp
@@ -34,7 +28,7 @@ class TestAppTests: XCTestCase {
         let urlScheme =  "ShowLocationThroughDeepLinking://host/"
         let lat = "37.332082387122"
        let long = "-122.030764055579"
-       if let custURL : URL = LocationDetailViewController().getURL(urlScheme: urlScheme, latitude: lat, longitude: long){
+       if let custURL : URL = LocationViewController().getURL(urlScheme: urlScheme, latitude: lat, longitude: long){
             if UIApplication.shared.canOpenURL(custURL){
                 XCTAssert(true)
             }else{
