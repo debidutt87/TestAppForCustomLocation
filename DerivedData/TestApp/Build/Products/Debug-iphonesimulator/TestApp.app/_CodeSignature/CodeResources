@@ -6,7 +6,7 @@
 	<dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		ILZd87AiP2rzMbdd3mSquRco3RI=
+		QuvBZ+SgS9aBhND+aoQ29NW6nJg=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		ohm2ouTZawQPG1qVfgw6ATuqx9g=
+		tYZVet4QpKZma4SWM1PoJlkN23c=
 		</data>
 		<key>Base.lproj/Localizable.strings</key>
 		<data>
@@ -22,23 +22,23 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/AddLocationViewController.nib</key>
 		<data>
-		75BAKS+Kvg2no0bO2NVs3vTsLCs=
+		jQUMD8luZ6oRHfEhs8Ca6IY/ytA=
 		</data>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<data>
-		lEAY1JjD9tcGp4VKdWrAd2AuQCM=
+		hn0uewCFoT1NVS/XRZmjAUcivPg=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
-		sRI5gJGskemv9pg3og1T0zGn350=
+		wc8BCGKL5MXtxAm5LxqYzcL7C6w=
 		</data>
 		<key>Base.lproj/Main.storyboardc/UINavigationController-jg1-rU-xj1.nib</key>
 		<data>
-		VAjOTCk7DuLWJdSh4f9BOwpz87c=
+		T+eR/HtnwNAP+ZPC2ZQL6eiX1hE=
 		</data>
 		<key>Base.lproj/Main.storyboardc/uug-11-1Zl-view-eo5-qt-Qfg.nib</key>
 		<data>
-		Ge9LobyWE93i8PN+33RQkN5P6Cw=
+		9AdHhHlsV6fMYji/GMHiFljjSXc=
 		</data>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<data>
@@ -110,7 +110,7 @@
 		</data>
 		<key>ProgressView.nib</key>
 		<data>
-		yRxi23PluxQ9thwh2wbWdJeYcjw=
+		oSMXLkkUPTDxnTtLVzcQ7+BjHnI=
 		</data>
 		<key>libswiftRemoteMirror.dylib</key>
 		<data>
@@ -123,7 +123,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SgBjmewgUpIVQ/hF5rQnxFRBekmLNHOs+x4IhBkxlnE=
+			vO+vpNkoEfPOiqEJ1ZTJGtL739WCCYJt2QxNrbi+Yxo=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
@@ -137,7 +137,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			I4IBGz1usAOLwUrV1Cn6vTuHi5KhXDNzv/3e3GXsYH4=
+			QYkXMYcLfvE4pQz7t/pGoZMngGtevYkY0uwtwHrjVuU=
 			</data>
 		</dict>
 		<key>Base.lproj/Localizable.strings</key>
@@ -151,35 +151,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4sE1F6QjzPezNiRNS1EsCqjsaGJ4CS06DaTvdNLUSgw=
+			b9WbpkJZZErjV+ThIlbsT0pLRGdFAAe1tjOLz+VcBqE=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ARCOuOnq/xFRtCCcDWWc/GQ6KSDNO1mAJuMy5QS33jU=
+			PJlLpr+bltYgDQpQvvnVIZfmGoX14IIzI6YQRVH8AMQ=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ehUtK0LbYBZ81nZEDNpQU6osdyrm2/IxnlqMz3QWMUw=
+			fTmNrsrZCVsL5TRcLeS0yxWxM79rczSpa9PYoEU/9Hg=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/UINavigationController-jg1-rU-xj1.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6X9iGOOKTQSQJAHkpNOz+vwpRbfCggznwK4Yp/iVIKI=
+			goWASKBQVHX5sy5LdJ+DDABOy05NOXS35jxqZwnA7/s=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/uug-11-1Zl-view-eo5-qt-Qfg.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4cLKrdgYocgPNXNRBA3kDZSq/nrpXjncKnaNvSwt0Pc=
+			0PSPzbmOSiaZc/Og5XlpHxfpHw8xCr+d3KQhrcNQNC0=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftCore.dylib</key>
@@ -291,7 +291,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fz0hihReAO1VCMnqUzm7fduXd70L8srP4XXBGewjMSc=
+			q6Fxl4r5hN/UAFD7jcaF4qEGajs8ZxPOZVQHR32lr8M=
 			</data>
 		</dict>
 		<key>libswiftRemoteMirror.dylib</key>
