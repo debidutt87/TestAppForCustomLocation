@@ -17,5 +17,7 @@ let editBtnTitle = "Edit"
 let doneBtnTitle = "Done"
 let locationCell = "LocationCell"
 let indicatorMsg = "indicatorMsg"
+let progressView = "ProgressView"
+let nibTagged = 1001
 
 

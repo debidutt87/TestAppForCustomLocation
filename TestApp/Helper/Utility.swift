@@ -18,9 +18,9 @@ extension StringProtocol {
 public extension UIViewController {
     public func addProgressIndicatorWithBackground(text : String){
         
-        guard let nibView =  Bundle.main.loadNibNamed("ProgressView", owner: self, options: nil)?[0] as? ProgressView else {return}
+        guard let nibView =  Bundle.main.loadNibNamed(progressView, owner: self, options: nil)?[0] as? ProgressView else {return}
         nibView.initWithTitle(title: text)
-        nibView.tag = 1001
+        nibView.tag = nibTagged
          self.view.addSubview(nibView)
         nibView.bringSubview( toFront: (nibView.progressIndicator))
         nibView.bringSubview( toFront: (nibView.msgLbl))
@@ -35,14 +35,11 @@ public extension UIViewController {
     }
     
     public func showProgressView(){
-        
-        
-        self.view.viewWithTag(1001)?.isHidden = false
-        
+        self.view.viewWithTag(nibTagged)?.isHidden = false
     }
     
     public func hideProgressView() {
-        self.view.viewWithTag(1001)?.isHidden =  true
+        self.view.viewWithTag(nibTagged)?.isHidden =  true
     }
 }
 
