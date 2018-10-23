@@ -6,6 +6,8 @@ class LocationViewController: UIViewController {
     @IBOutlet weak var locationTableView: UITableView!
     var customLocations : LocationList?
     var customLocationsList : [Location] = []
+    
+    //MARK: Life Cycle Method
     override func viewDidLoad() {
         super.viewDidLoad()
        
@@ -20,6 +22,7 @@ class LocationViewController: UIViewController {
         locationTableView.reloadData()
     }
     
+   /*..... Show Editing method ...*/
   @objc  func showEditing()
     {
         locationTableView.setEditing(!locationTableView.isEditing, animated: true)
@@ -70,7 +73,7 @@ extension LocationViewController : UITableViewDelegate,UITableViewDataSource {
 }
 
 extension LocationViewController {
-    
+    //MARK: Deep Linking
     func openWikiAppThroughDeepLinking(customLocation:Location?){
         if let custLoc = customLocation {
             self.performDeepLinking(urlScheme: urlScheme, latitude: custLoc.latitude, longitude: custLoc.longitude)

@@ -5,6 +5,7 @@ import UIKit
 
 
 extension StringProtocol {
+    /*.. Making first character of string in Caps ....*/
     var firstUppercased: String {
         guard let first = first else { return "" }
         return String(first).uppercased() + dropFirst()
@@ -15,9 +16,11 @@ extension StringProtocol {
     }
 }
 
+
 public extension UIViewController {
+    //MARK: Custom Progress Indicator View
+    /*.. Adding Progress view on main View....*/
     public func addProgressIndicatorWithBackground(text : String){
-        
         guard let nibView =  Bundle.main.loadNibNamed(progressView, owner: self, options: nil)?[0] as? ProgressView else {return}
         nibView.initWithTitle(title: text)
         nibView.tag = nibTagged
@@ -31,13 +34,14 @@ public extension UIViewController {
         self.view.addConstraint(xConstraint)
         self.view.addConstraint(yConstraint)
         self.view.layoutIfNeeded()
-        
     }
     
+     /*.. Start Progress Indicator ......*/
     public func showProgressView(){
         self.view.viewWithTag(nibTagged)?.isHidden = false
     }
     
+     /*.. Stop Progress Indicator ......*/
     public func hideProgressView() {
         self.view.viewWithTag(nibTagged)?.isHidden =  true
     }

@@ -22,17 +22,19 @@ class LocationManager: NSObject {
     }
     
     //MARK: Saving and retriving Data
+     /*.... Storing Data.....*/
     func storeData(location:Location){
             locationList.insert(location, at: 0)
             let storedData = LocationList(locList: locationList)
             DataManager.saveData(data: storedData,key: storeLocationData)
     }
  
-    
+    /*.... Loading Data.....*/
     func getStoreData() ->[Location]?{
         return locationList
     }
     
+    /*.... Modifying Data.....*/
     func storeModifiedData(list : [Location]){
         let storedData =  LocationList(locList: list)
         DataManager.saveData(data: storedData,key: storeLocationData)
