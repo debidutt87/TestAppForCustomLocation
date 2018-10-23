@@ -18,16 +18,16 @@ extension StringProtocol {
 public extension UIViewController {
     public func addProgressIndicatorWithBackground(text : String){
         
-        let nibView =  Bundle.main.loadNibNamed("ProgressView", owner: self, options: nil)![0] as? ProgressView
-        nibView?.initWithTitle(title: text)
-        nibView?.tag = 1001
-         self.view.addSubview(nibView!)
-        nibView?.bringSubview( toFront: (nibView?.progressIndicator)!)
-        nibView?.bringSubview( toFront: (nibView?.msgLbl)!)
-       nibView?.translatesAutoresizingMaskIntoConstraints =  false
-        nibView?.isHidden =  true
-        let xConstraint = NSLayoutConstraint(item: nibView!, attribute: .centerX, relatedBy: .equal, toItem: self.view, attribute: .centerX, multiplier: 1, constant: 0)
-        let yConstraint = NSLayoutConstraint(item: nibView!, attribute: .centerY, relatedBy: .equal, toItem: self.view, attribute: .centerY, multiplier: 1, constant: 0)
+        guard let nibView =  Bundle.main.loadNibNamed("ProgressView", owner: self, options: nil)?[0] as? ProgressView else {return}
+        nibView.initWithTitle(title: text)
+        nibView.tag = 1001
+         self.view.addSubview(nibView)
+        nibView.bringSubview( toFront: (nibView.progressIndicator))
+        nibView.bringSubview( toFront: (nibView.msgLbl))
+       nibView.translatesAutoresizingMaskIntoConstraints =  false
+        nibView.isHidden =  true
+        let xConstraint = NSLayoutConstraint(item: nibView, attribute: .centerX, relatedBy: .equal, toItem: self.view, attribute: .centerX, multiplier: 1, constant: 0)
+        let yConstraint = NSLayoutConstraint(item: nibView, attribute: .centerY, relatedBy: .equal, toItem: self.view, attribute: .centerY, multiplier: 1, constant: 0)
         self.view.addConstraint(xConstraint)
         self.view.addConstraint(yConstraint)
         self.view.layoutIfNeeded()
