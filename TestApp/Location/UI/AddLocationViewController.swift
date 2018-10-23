@@ -31,7 +31,7 @@ extension AddLocationViewController {
             self.navigationController?.popViewController(animated: true)
         }, failureHandler: { (error) -> Void in
              self.hideProgressView()
-            switch(error as! LocationValidationError) {
+            switch(error) {
             case .InvalidLocation:
                 self.showAlert(errorMsg: NSLocalizedString(invalidLocation, comment: ""))
             case .EmptyLocation:

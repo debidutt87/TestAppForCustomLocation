@@ -5,7 +5,7 @@ class LocationViewController: UIViewController {
 
     @IBOutlet weak var locationTableView: UITableView!
     var customLocations : LocationList?
-    var customLocationsList : [Location]?
+    var customLocationsList : [Location] = []
     override func viewDidLoad() {
         super.viewDidLoad()
        
@@ -39,18 +39,18 @@ extension LocationViewController : UITableViewDelegate,UITableViewDataSource {
     }
    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-        return customLocationsList!.count
+        return customLocationsList.count
     }
     
      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: locationCell, for: indexPath) as! LocationCell
-        let custLoc = customLocationsList![indexPath.row] as Location
-        cell.locationName.text = custLoc.locationName?.firstUppercased
+        let custLoc = customLocationsList[indexPath.row] as Location
+        cell.locationName.text = custLoc.locationName.firstUppercased
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
-      let custLoc = customLocationsList![indexPath.row] as Location
+      let custLoc = customLocationsList[indexPath.row] as Location
        openWikiAppThroughDeepLinking(customLocation: custLoc)
     }
     
@@ -60,8 +60,8 @@ extension LocationViewController : UITableViewDelegate,UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath){
         if editingStyle == .delete {
-            customLocationsList?.remove(at: indexPath.row)
-            LocationManager().storeModifiedData(list: customLocationsList!)
+            customLocationsList.remove(at: indexPath.row)
+            LocationManager().storeModifiedData(list: customLocationsList)
             locationTableView.deleteRows(at: [indexPath], with: .left)
          }
     }
@@ -73,7 +73,7 @@ extension LocationViewController {
     
     func openWikiAppThroughDeepLinking(customLocation:Location?){
         if let custLoc = customLocation {
-            self.performDeepLinking(urlScheme: urlScheme, latitude: custLoc.latitude!, longitude: custLoc.longitude!)
+            self.performDeepLinking(urlScheme: urlScheme, latitude: custLoc.latitude, longitude: custLoc.longitude)
         }
     }
     
