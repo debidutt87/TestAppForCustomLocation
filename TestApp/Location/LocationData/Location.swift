@@ -5,9 +5,9 @@ import UIKit
 class Location: NSObject, NSCoding{
   
     
-    var locationName : String?
-    var latitude : String?
-    var longitude : String?
+    var locationName : String
+    var latitude : String
+    var longitude : String
     
     init(locationName:String,latitude:String,longitude:String) {
         self.locationName = locationName

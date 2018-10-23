@@ -18,7 +18,7 @@ SuccessHandler to be sent as location model
 Failure Handler to be send as error found whild validation of address provided
 */
  
-    class  func findLocation(locationName:String,successHandler: @escaping (Location) -> Void, failureHandler: @escaping (Error) ->Void){
+    class  func findLocation(locationName:String,successHandler: @escaping (Location) -> Void, failureHandler: @escaping (LocationValidationError) ->Void){
         if locationName == " " || locationName.count < 1 {
             failureHandler(LocationValidationError.EmptyLocation)
         }else{
